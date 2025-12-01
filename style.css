@@ -1,0 +1,563 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Cinzel", serif;
+  background-color: rgba(22, 68, 19);
+  line-height: 1.6;
+}
+
+.hero-section {
+  min-height: 80vh;
+  position: relative;
+  background-image: url("./images/ACCUEIL.png");
+  background-size: cover;
+  overflow: hidden;
+}
+
+.header {
+  display: flex;
+  justify-content: flex-end;  
+  align-items: center;
+  padding: 1rem;
+  padding-left: 140px;   
+}
+
+.logo {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  z-index: 1000;
+}
+
+.logo img {
+  width: 120px;
+  height: auto;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  text-align: center;
+}
+
+.nav-button {
+  background-color: rgba(209, 199, 146);
+  border-radius: 17px;
+  padding: 5px 10px;
+  color: rgba(22, 68, 19);
+  font-family: "Raleway", sans-serif;
+  font-size: 1.25rem;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+:hover.nav-button{
+  background-color: rgb(179, 172, 128);
+}
+
+.hero-bottom-text {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: "Cinzel Decorative", serif;
+  font-size: 3rem;
+  letter-spacing: 0.3em;
+  color: rgba(209, 199, 146);
+}
+
+.container {
+  padding: 2rem 2rem;
+}
+
+.hero-description {
+  color: rgba(209, 199, 146);
+  text-align: center;
+  font-size: 1.4rem;
+  font-family: "Raleway", sans-serif;
+  line-height: 1.75;
+  max-width: 55rem;
+  margin: 0 auto;
+}
+
+.heading-font {
+  font-family: "Cinzel Decorative", serif;
+  color: rgba(209, 199, 146);
+  letter-spacing: 0.3em;
+  font-weight: 300;
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  max-width: 90rem;
+  margin: 0 auto 3rem;
+}
+
+.artwork-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.image-frame {
+  overflow: hidden;
+}
+
+.image-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  aspect-ratio: 3/4;
+}
+
+.text-box {
+  background-color: rgba(209, 199, 146);
+  padding: 1.5rem;
+  min-height: 11rem;
+}
+
+.artwork-title {
+  color: rgba(22, 68, 19);
+  font-size: 1.125rem;
+  font-family: "Cinzel Decorative", serif;
+  margin-bottom: 0.5rem;
+}
+
+.artwork-description {
+  color: rgba(22, 68, 19);
+  font-size: 0.875rem;
+  font-family: "Raleway", sans-serif;
+}
+
+.grid-4 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin: 0 auto 3rem;
+}
+
+.section-double-title {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.expositionSection .artwork-card {
+  gap: 0;
+}
+
+.expositionSection .image-frame {
+  background: rgba(209, 199, 146);
+  padding: 12px;
+}
+
+.expositionSection .image-frame img {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+}
+
+.expositionSection .artwork-card .text-box {
+  background: rgba(209, 199, 146);
+  border-top: none;
+  margin-top: 0;
+  padding-top: 0.75rem;
+}
+
+.expositionSection .artwork-title {
+  color: rgba(22, 68, 19);
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+
+.expositionSection .artwork-description {
+  color: rgba(22, 68, 19);
+  line-height: 1.5;
+}
+
+.expositionSection .heading-font{
+    margin-bottom: 0rem;
+}
+
+.artwork-image-square {
+  aspect-ratio: 1/1;
+}
+
+.subtitle {
+  font-family: "Cinzel Decorative", serif;
+  color: rgba(209, 199, 146);
+  letter-spacing: 0.3em;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 2rem;
+  padding-bottom: 2rem;
+}
+
+.section-mini-title {
+  font-size: 1.5rem;
+  font-family: "Cinzel", serif;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.panoramic-container {
+  width: 100%;
+  padding-top: 2rem;
+  max-width: 100%;
+  margin: 3rem auto;
+}
+
+.panoramic-image {
+  width: 100%;
+  aspect-ratio: auto;
+}
+
+.panoramic-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  aspect-ratio: auto;
+}
+
+.contact-newsletter {
+  color: rgba(209, 199, 146);
+  padding: 3rem 2rem;
+}
+
+.container-box {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 3rem;
+  align-items: flex-start;
+}
+
+.contact-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-section-title {
+  font-family: "Cinzel Decorative", serif;
+  font-size: 2rem;
+  font-weight: 100;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.5rem;
+}
+
+.contact-subtitle {
+  font-family: "Cinzel Decorative", serif;
+  text-align: end;
+  font-size: 1.25rem;
+  letter-spacing: 0.25em;
+  margin-bottom: 2rem;
+}
+
+.social-icons {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.social-icon {
+  width: 40px;
+  height: 40px;
+  background-color: black;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(22, 68, 19);
+  text-decoration: none;
+}
+
+.social-icon svg {
+  width: 30px;
+  height: 30px;
+}
+
+.contact-info {
+  background-color: rgba(209, 199, 146);
+  color: rgba(22, 68, 19);
+  padding: 1rem 2.5rem;
+  border-radius: 70px;
+  flex: 1;
+  text-align: center;
+}
+
+.contact-p {
+  font-family: "Cinzel", serif;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.phone {
+  font-family: "Cinzel Decorative", serif;
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.email {
+  font-size: 0.95rem;
+}
+
+.divider {
+  width: 5px;
+  border-radius: 20px;
+  background-color: rgba(209, 199, 146);
+  align-self: stretch;
+}
+
+.newsletter-section {
+  flex: 1;
+}
+
+::placeholder{
+    color: white;
+}
+
+.section-title {
+  font-family: "Cinzel Decorative", serif;
+  font-weight: 100;
+  text-align: center;
+}
+
+.newsletter-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group label {
+  font-size: 0.875rem;
+  letter-spacing: 0.05em;
+  font-weight: 500;
+}
+
+.form-group input {
+  background-color: rgba(209, 199, 146);
+  border: none;
+  padding: 0.75rem 1rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  color: rgba(22, 68, 19);
+  outline: none;
+}
+
+.contact-section > div:last-child {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.submit-btn {
+  background-color: rgba(209, 199, 146);
+  color: white;
+  opacity: 80%;
+  border: none;
+  padding: 0.75rem 2rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  align-self: flex-end;
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    min-height: 50vh;
+    position: relative;
+    background-image: url("./images/ACCUEIL.png");
+    background-size: cover;
+    overflow: hidden;
+  }
+}
+
+@media (min-width: 768px) {
+  .grid-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .grid-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 790px) {
+  .container-box {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .divider {
+    width: 100%;
+    height: 1px;
+  }
+
+  .social-icons {
+    flex-direction: row;
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+
+  .social-icons {
+    flex-direction: row;
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+
+  .hero-bottom-text{
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: "Cinzel Decorative", serif;
+    font-size: 1.6rem;
+    letter-spacing: 0rem;
+    color: rgba(209, 199, 146);
+  }
+
+}
+
+@media (max-width: 450px){
+    .hero-section {
+        min-height: 30vh;
+        position: relative;
+        background-image: url("./images/ACCUEIL.png");
+        background-size: cover;
+        overflow: hidden;
+    }
+      
+    .nav-button {
+        background-color: rgba(209, 199, 146);
+        border-radius: 17px;
+        padding: 5px 10px;
+        color: rgba(22, 68, 19);
+        font-family: "Raleway", sans-serif;
+        font-size: 0.8rem;
+    }
+
+    .hero-bottom-text{
+        position: absolute;
+        bottom: 2rem;
+        left: 50%;
+        transform: translateX(-50%);
+        font-family: "Cinzel Decorative", serif;
+        font-size: 1.5rem;
+        letter-spacing: 0rem;
+        color: rgba(209, 199, 146);
+    }
+
+    .heading-font {
+        font-family: "Cinzel Decorative", serif;
+        color: rgba(209, 199, 146);
+        letter-spacing: 0.3em;
+        font-weight: 300;
+        font-size: 2.2rem;
+        text-align: center;
+        margin-top: 5rem;
+        margin-bottom: 2rem;
+    }
+
+    .section-mini-title {
+        font-size: 1rem;
+        font-family: "Cinzel", serif;
+        text-align: center;
+        padding-bottom: 2rem;
+    }
+
+    .hero-description {
+        color: rgba(209, 199, 146);
+        text-align: center;
+        font-size: 1rem;
+        font-family: "Raleway", sans-serif;
+        line-height: 1.75;
+        max-width: 13rem;
+        margin: 0 auto;
+    }
+
+    .grid-3 {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 5rem;
+        max-width: 90rem;
+        margin: 0 auto 3rem;
+    }
+
+    .newsletter-form {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        margin-top: 2rem;
+    }
+
+    .section-box {
+        flex: 1;
+        flex-direction: column-reverse;
+        display: flex;
+    }
+    
+    .contact-section-title {
+        font-family: "Cinzel Decorative", serif;
+        font-size: 1.5rem;
+        font-weight: 100;
+        letter-spacing: 0.05em;
+        margin-bottom: 0.5rem;
+    }
+
+    .reversed{
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 1rem;
+    }
+
+    .container-box {
+        max-width: 1200px;
+        display: inline;
+        margin: 0 auto;
+        align-items: flex-start;
+    }
+
+    .section-title {
+        font-family: "Cinzel Decorative", serif;
+        font-weight: 100;
+        text-align: center;
+        padding-top: 20px;
+    }
+}
+
+@media (max-width: 10px){
+  .hero-section{
+    background-image: url("./images/ACCUEIL.png");
+  }
+}
